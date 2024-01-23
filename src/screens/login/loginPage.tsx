@@ -4,7 +4,7 @@ import { Button, TextInput } from "react-native-paper"
 import { Assets } from "../../assets/assets"
 import { BasePageWrapper } from "../basePage/basePageWrapper"
 import { NativeStackScreenProps } from '@react-navigation/native-stack'
-import { RootNavigationParamList, SCREENS } from "../../navigation/navigations"
+import { RootNavigationParamList, SCREENS } from "../../navigation/constants"
 
 type LoginScreenProps = NativeStackScreenProps<RootNavigationParamList, SCREENS.Login>
 
