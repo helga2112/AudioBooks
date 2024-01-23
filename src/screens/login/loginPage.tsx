@@ -11,7 +11,8 @@ type LoginScreenProps = NativeStackScreenProps<RootNavigationParamList, SCREENS.
 export const LoginScreen = ({ navigation }: LoginScreenProps) => {
     const [login, setLogin] = useState('')
     const [password, setPassword] = useState('')
-    const [isAuthorized, setIsAuthorized] = useState(false)
+    // TODO: make authorisation
+    // const [isAuthorized, setIsAuthorized] = useState(false)
 
     return (
         <BasePageWrapper>
@@ -47,9 +48,8 @@ export const LoginScreen = ({ navigation }: LoginScreenProps) => {
                     onChangeText={password => setPassword(password)}
                 />
                 <Button style={{ marginTop: 20 }} mode='contained-tonal' onPress={() => {
-                    console.log('[USER CREDS]: ', login, password)
                     if (login && password) {
-                        navigation.navigate(SCREENS.Books)
+                        navigation.navigate(SCREENS.AuthorizedApp)
                     }
                 }}>
                     LOGIN

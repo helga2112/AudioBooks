@@ -2,9 +2,7 @@ import { View } from "react-native"
 import { Text } from "react-native-paper"
 import { BasePageWrapper } from "../basePage/basePageWrapper"
 
-export const ProfileScreen = () => {
-
-
+export const FavoriteBooksScreen = (/* {navigation}: BooksScreenProps */) => {
     return (
         <BasePageWrapper>
             <View style={{
@@ -15,8 +13,7 @@ export const ProfileScreen = () => {
 
 
             }}>
-
-                <Text>User Profile Data</Text>
+                <Text>Favorite Books Screen</Text>
             </View>
         </BasePageWrapper>
     )
