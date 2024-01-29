@@ -1,3 +1,4 @@
+import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { SCREENS } from './constants';
 import { BooksScreen } from '../screens/booksShelf/booksShelfScreen';

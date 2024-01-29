@@ -1,6 +1,6 @@
-export enum SCREENS  {
-    AuthorizedApp ='AuthorizedApp',
-    Login ='Login',
+export enum SCREENS {
+    AuthorizedApp = 'AuthorizedApp',
+    Login = 'Login',
     Books = 'Books',
     FavoriteBooks = 'FavoriteBooks',
     Profile = 'Profile',
@@ -14,5 +14,4 @@ export type RootNavigationParamList = {
     [SCREENS.FavoriteBooks]: undefined //{ paramB: string; paramC: number }
     [SCREENS.Profile]: undefined //{ paramB: string; paramC: number }
     [SCREENS.Logout]: undefined //{ paramB: string; paramC: number }
-  }
-  
+}
