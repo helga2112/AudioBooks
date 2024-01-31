@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 import { Colors } from "react-native/Libraries/NewAppScreen"
 
-export const BasePageWrapper = (props: { children?: JSX.Element }): React.JSX.Element => {
+export const BaseScreenWrapper = (props: { children?: JSX.Element }): React.JSX.Element => {
   const { children } = props
   const isDarkMode = useColorScheme() === 'dark';
 

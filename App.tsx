@@ -1,17 +1,10 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
+import React from 'react';
+import DrawerNavigation from './src/navigation/drawerNavigation';
 
-import * as React from 'react';
-import { NavigationContainer } from '@react-navigation/native'
-
-import DraweraNavigation from './src/navigation/drawerNavigation';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { RootNavigationParamList, SCREENS } from './src/navigation/constants';
-import { LoginScreen } from './src/screens/login/loginPage';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {LoginScreen} from './src/screens/login/loginScreen';
+import {RootNavigationParamList, SCREENS} from '@src/navigation/constants';
 
 const Stack = createNativeStackNavigator<RootNavigationParamList>();
 
@@ -22,12 +15,11 @@ function App(): React.JSX.Element {
         <Stack.Screen name={SCREENS.Login} component={LoginScreen} />
         <Stack.Screen
           name={SCREENS.AuthorizedApp}
-          component={DraweraNavigation}
-          options={{ headerShown: false }}
+          component={DrawerNavigation}
+          options={{headerShown: false}}
         />
       </Stack.Navigator>
     </NavigationContainer>
-
   );
 }
 

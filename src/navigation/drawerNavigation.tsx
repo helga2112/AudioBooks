@@ -1,14 +1,14 @@
-import React from 'react';
-import { createDrawerNavigator } from '@react-navigation/drawer';
-import { SCREENS } from './constants';
 import { BooksScreen } from '../screens/booksShelf/booksShelfScreen';
-import { ProfileScreen } from '../screens/profile/profile';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 import { FavoriteBooksScreen } from '../screens/favourites/favoriteBoolsScreen';
 import { LogoutScreen } from '../screens/logout/logoutScreen';
+import { ProfileScreen } from '../screens/profile/profile';
+import React from 'react';
+import { SCREENS } from './constants';
 
 const Drawer = createDrawerNavigator();
 
-function DraweraNavigation() {
+function DrawerNavigation() {
     return (
         <Drawer.Navigator >
             <Drawer.Screen name={SCREENS.Books} component={BooksScreen} />
@@ -19,4 +19,4 @@ function DraweraNavigation() {
     );
 }
 
-export default DraweraNavigation
+export default DrawerNavigation

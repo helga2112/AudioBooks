@@ -1,21 +1,29 @@
-import React from "react"
-import { View } from "react-native"
-import { Text } from "react-native-paper"
-import { BasePageWrapper } from "../basePage/basePageWrapper"
+import {BaseScreenWrapper} from '@screens/basePage/baseScreenWrapper';
+import {View} from 'react-native';
+import React from 'react';
+import {Text} from 'react-native-paper';
 
 export const BooksScreen = () => {
-    return (
-        <BasePageWrapper>
-            <View style={{
-                height: '100%',
-                padding: 20,
-                marginLeft: 'auto',
+  return (
+    <BaseScreenWrapper>
+      <View
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          height: '100%',
+          padding: 20,
+          marginHorizontal: 'auto',
+          /*  marginLeft: 'auto',
                 marginRight: 'auto',
-            }}>
-                <Text>All Books will be here</Text>
-            </View>
-        </BasePageWrapper>
-    )
-}
-
-
+ */
+        }}>
+        <Text
+          style={{
+            marginHorizontal: 'auto',
+          }}>
+          All Books will be here
+        </Text>
+      </View>
+    </BaseScreenWrapper>
+  );
+};
