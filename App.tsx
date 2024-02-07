@@ -1,34 +1,26 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
+import React from 'react';
+import DrawerNavigation from './src/navigation/drawerNavigation';
 
-import * as React from 'react';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { NavigationContainer } from '@react-navigation/native'
-
-import { LoginScreen } from './src/screens/login/loginPage';
-import { BooksScreen } from './src/screens/catalog/catalog';
-import { RootNavigationParamList, SCREENS } from './src/navigation/navigations';
-
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {LoginScreen} from './src/screens/login/loginScreen';
+import {RootNavigationParamList, SCREENS} from '@src/navigation/constants';
 
 const Stack = createNativeStackNavigator<RootNavigationParamList>();
 
-
 function App(): React.JSX.Element {
-
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName={SCREENS.Login}>
         <Stack.Screen name={SCREENS.Login} component={LoginScreen} />
-        <Stack.Screen name={SCREENS.Books} component={BooksScreen} />
+        <Stack.Screen
+          name={SCREENS.AuthorizedApp}
+          component={DrawerNavigation}
+          options={{headerShown: false}}
+        />
       </Stack.Navigator>
     </NavigationContainer>
-
   );
 }
 
 export default App;
-
