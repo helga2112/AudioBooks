@@ -6,12 +6,13 @@
  */
 
 import * as React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
 
-import DraweraNavigation from './src/navigation/drawerNavigation';
+import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {RootNavigationParamList, SCREENS} from './src/navigation/constants';
 import {LoginScreen} from 'screens/login/loginScreen';
+
+import {RootNavigationParamList, SCREENS} from './src/navigation/constants';
+import DraweraNavigation from './src/navigation/drawerNavigation';
 
 const Stack = createNativeStackNavigator<RootNavigationParamList>();
 

@@ -1,9 +1,10 @@
 import React from 'react';
 import {View} from 'react-native';
-import {Button, Text} from 'react-native-paper';
+
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {RootNavigationParamList, SCREENS} from 'navigation/constants';
-import {BaseScreenWrapper} from 'screens/basePage/baseScreenWrapper';
+import {Button, Text} from 'react-native-paper';
+import BaseScreenWrapper from 'screens/basePage/baseScreenWrapper';
 
 type LogoutScreenProps = NativeStackScreenProps<
   RootNavigationParamList,
