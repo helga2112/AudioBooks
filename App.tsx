@@ -7,6 +7,8 @@
 
 import * as React from 'react';
 
+import {registerRootComponent} from 'expo';
+
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {LoginScreen} from 'screens/login/loginScreen';
@@ -30,5 +32,7 @@ function App(): React.JSX.Element {
     </NavigationContainer>
   );
 }
+
+registerRootComponent(App);
 
 export default App;
