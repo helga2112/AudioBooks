@@ -14,6 +14,8 @@ module.exports = {
           '@assets/*': ['src/assets/*'],
           '@navigation/*': ['src/navigation/*'],
           '@screens/*': ['src/screens/*'],
+          '@model/*': ['src/model/*'],
+          '@api/*': ['src/api/*'],
         },
       },
     ],
