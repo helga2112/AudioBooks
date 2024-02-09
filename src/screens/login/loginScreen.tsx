@@ -2,9 +2,9 @@ import React, {useState} from 'react';
 import {Image, View} from 'react-native';
 import {Button, TextInput} from 'react-native-paper';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {RootNavigationParamList, SCREENS} from '@navigation/constants';
-import {BaseScreenWrapper} from '@screens/basePage/baseScreenWrapper';
-import {Assets} from '@assets/assets';
+import {BaseScreenWrapper} from 'screens/basePage/baseScreenWrapper';
+import {Assets} from 'assets/assets';
+import {RootNavigationParamList, SCREENS} from 'navigation/constants';
 
 type LoginScreenProps = NativeStackScreenProps<
   RootNavigationParamList,

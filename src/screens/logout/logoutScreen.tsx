@@ -1,17 +1,17 @@
 import React from 'react';
 import {View} from 'react-native';
 import {Button, Text} from 'react-native-paper';
-import {DrawerScreenProps} from '@react-navigation/drawer';
-import {ParamListBase} from '@react-navigation/native';
-import {SCREENS} from '@src/navigation/constants';
-import {BaseScreenWrapper} from '@screens/basePage/baseScreenWrapper';
+import {NativeStackScreenProps} from '@react-navigation/native-stack';
+import {RootNavigationParamList, SCREENS} from 'navigation/constants';
+import {BaseScreenWrapper} from 'screens/basePage/baseScreenWrapper';
 
-type LogoutScreenProps = DrawerScreenProps<ParamListBase, SCREENS.Logout>;
+type LogoutScreenProps = NativeStackScreenProps<
+  RootNavigationParamList,
+  SCREENS.Logout
+>;
 
 // TODO: navigatio to login page on button click
-export const LogoutScreen = ({
-  navigation,
-}: LogoutScreenProps): React.JSX.Element => {
+export const LogoutScreen = ({navigation}: LogoutScreenProps) => {
   return (
     <BaseScreenWrapper>
       <View

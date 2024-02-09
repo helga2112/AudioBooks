@@ -1,9 +1,9 @@
-import {BaseScreenWrapper} from '@screens/basePage/baseScreenWrapper';
 import React from 'react';
 import {View} from 'react-native';
 import {Text} from 'react-native-paper';
+import {BaseScreenWrapper} from 'screens/basePage/baseScreenWrapper';
 
-export const FavoriteBooksScreen = (/* {navigation}: BooksScreenProps */) => {
+export const FavoriteBooksScreen = () => {
   return (
     <BaseScreenWrapper>
       <View
