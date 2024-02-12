@@ -1,1 +1,1 @@
-export type ROLES = 'kid' | 'parent' | 'guest' | 'admin'
+export type ROLES = 'child' | 'parent' | 'guest' | 'admin'
