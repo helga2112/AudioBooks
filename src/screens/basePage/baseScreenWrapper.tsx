@@ -1,12 +1,12 @@
 import React from 'react';
-import {SafeAreaView, StatusBar, useColorScheme, View} from 'react-native';
+import { SafeAreaView, StatusBar, useColorScheme, View } from 'react-native';
 
-import {Colors} from 'react-native/Libraries/NewAppScreen';
+import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 const BaseScreenWrapper = (props: {
   children?: JSX.Element;
 }): React.JSX.Element => {
-  const {children} = props;
+  const { children } = props;
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {

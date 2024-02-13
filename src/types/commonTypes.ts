@@ -1,0 +1,1 @@
+export type ROLES = 'child' | 'parent' | 'guest' | 'admin'

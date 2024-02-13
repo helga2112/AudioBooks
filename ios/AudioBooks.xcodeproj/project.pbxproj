@@ -15,6 +15,7 @@
 		7699B88040F8A987B510C191 /* libPods-AudioBooks-AudioBooksTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-AudioBooks-AudioBooksTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		A326CEF84C7181CE9296402D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CF01D4C999D2C36B183B78 /* ExpoModulesProvider.swift */; };
+		A8C3C45B2B7BADBB00F38ACF /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = A8C3C45A2B7BADBB00F38ACF /* Fonts */; };
 		AD753F11074876032C6E315D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E0451D89EBA8EE2FF27743 /* ExpoModulesProvider.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = AudioBooks/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-AudioBooks-AudioBooksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioBooks-AudioBooksTests.release.xcconfig"; path = "Target Support Files/Pods-AudioBooks-AudioBooksTests/Pods-AudioBooks-AudioBooksTests.release.xcconfig"; sourceTree = "<group>"; };
 		95CF01D4C999D2C36B183B78 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-AudioBooks/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		A8C3C45A2B7BADBB00F38ACF /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Fonts; path = "../node_modules/react-native-vector-icons/Fonts"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -98,6 +100,7 @@
 		13B07FAE1A68108700A75B9A /* AudioBooks */ = {
 			isa = PBXGroup;
 			children = (
+				A8C3C45A2B7BADBB00F38ACF /* Fonts */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -273,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8C3C45B2B7BADBB00F38ACF /* Fonts in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
@@ -656,10 +660,7 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -727,10 +728,7 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
