@@ -1,17 +1,16 @@
-import { View, TouchableOpacity, SafeAreaView } from "react-native"
-import { MD3Colors, ProgressBar, Text } from "react-native-paper"
-import { FlatList, ScrollView } from "react-native-gesture-handler"
+import { SafeAreaView } from "react-native"
+import { FlatList } from "react-native-gesture-handler"
 import { BookListItem } from "./BookListItem"
-import { BookModel, FavoriteBoookModel } from "model/bookModel"
-import { Dimensions } from "react-native"
+import { BookModel } from "model/bookModel"
 
 // TODO: check how can you add progress bar 
 
 interface BooksListProps {
   data: BookModel[]
+  openBook: (data: BookModel) => void
 }
 
-export const BooksList = ({ data }: BooksListProps) => {
+export const BooksList = ({ data, openBook }: BooksListProps) => {
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
@@ -26,7 +25,7 @@ export const BooksList = ({ data }: BooksListProps) => {
 
         horizontal={false}
         numColumns={2}
-        renderItem={({ item }) => <BookListItem data={item} />}
+        renderItem={({ item }) => <BookListItem data={item} openBook={openBook} />}
         keyExtractor={(item) => item.id}
       >
       </FlatList>

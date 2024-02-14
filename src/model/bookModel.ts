@@ -1,6 +1,7 @@
 export interface BookModel {
   id: string
   title: string
+  description: string
   author: string
   url: string
   fileSize: number

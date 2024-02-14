@@ -7,14 +7,15 @@
 
 import * as React from 'react';
 
-import {registerRootComponent} from 'expo';
+import { registerRootComponent } from 'expo';
 
-import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {LoginScreen} from 'screens/login/loginScreen';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { LoginScreen } from 'screens/login/loginScreen';
 
-import {RootNavigationParamList, SCREENS} from './src/navigation/constants';
+import { RootNavigationParamList, SCREENS } from './src/navigation/constants';
 import DraweraNavigation from './src/navigation/drawerNavigation';
+import { BookCard } from 'components/book/BookCard';
 
 const Stack = createNativeStackNavigator<RootNavigationParamList>();
 
@@ -26,7 +27,12 @@ function App(): React.JSX.Element {
         <Stack.Screen
           name={SCREENS.AuthorizedApp}
           component={DraweraNavigation}
-          options={{headerShown: false}}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name={SCREENS.Book}
+          component={BookCard}
+          options={{ headerShown: false }}
         />
       </Stack.Navigator>
     </NavigationContainer>

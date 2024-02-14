@@ -11,8 +11,10 @@ type LogoutScreenProps = NativeStackScreenProps<
   SCREENS.Logout
 >;
 
+type LogoutNavigationProp = LogoutScreenProps['navigation'];
+
 // TODO: navigatio to login page on button click
-export const LogoutScreen = ({ navigation }: LogoutScreenProps) => {
+export const LogoutScreen = (navigation: LogoutNavigationProp) => {
   return (
     <BaseScreenWrapper>
       <View
